@@ -29,7 +29,20 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+
+    // you don't have to prepare any container
     implementation "io.ktor:ktor-server-netty:$ktor_version"
+
+    //you can see some log message at console
     implementation "ch.qos.logback:logback-classic:$logback_version"
+
+    //you can test using with this
     testImplementation "io.ktor:ktor-server-tests:$ktor_version"
+
+    //this is component of ktor's core
+    implementation "io.ktor:ktor-server-core:$ktor_version"
+
+    //converting kotlin objects into a Json
+    implementation "io.ktor:ktor-serialization:$ktor_version"
+
 }
